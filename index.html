@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>🎉 Welcome to My Interactive Page</h1>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>Part 1: Event Handling</h2>
+    <button id="clickBtn">Click Me</button>
+    <p id="clickMessage"></p>
+
+    <button id="hoverBtn">Hover over me</button>
+    <p id="hoverMessage"></p>
+
+    <input type="text" id="keyboardInput" placeholder="Type something...">
+    <p id="keyboardMessage"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>Part 2: Interactive Elements</h2>
+
+    <!-- Light/Dark mode -->
+    <button id="toggleMode">Toggle Light/Dark Mode</button>
+
+    <!-- Counter -->
+    <div class="counter">
+      <button id="decrease">-</button>
+      <span id="count">0</span>
+      <button id="increase">+</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+      <button id="faqBtn">What is JavaScript?</button>
+      <p id="faqAnswer" class="hidden">JavaScript is the language that makes web pages interactive!</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Part 3: Form Validation</h2>
+    <form id="myForm">
+      <label>Name: <input type="text" id="name"></label>
+      <p class="error" id="nameError"></p>
+
+      <label>Email: <input type="text" id="email"></label>
+      <p class="error" id="emailError"></p>
+
+      <label>Password: <input type="password" id="password"></label>
+      <p class="error" id="passwordError"></p>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+</body>
+</html>
